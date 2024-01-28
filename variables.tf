@@ -1,19 +1,19 @@
 variable "metro" {
   description = "Location code."
   type        = string
-  default     = "dc"
+  default     = "sg"
 }
 
 variable "plan" {
   description = "Server config."
   type        = string
-  default     = "n3.xlarge.x86"
+  default     = "c3.small.x86"
 }
 
 variable "os" {
   description = "Operating System."
   type        = string
-  default     = "windows_2022"
+  default     = "ubuntu_22_04"
 }
 
 variable "billing" {
@@ -31,11 +31,11 @@ variable "billing" {
 variable "auth_token" {
   description = "Equinix Metal Authentication Token."
   type        = string
-  default     = "Yqwwtw4cwuUSmGkfQrDAeHdDDHjZzQTz"
+  default     = "$METAL_AUTH_TOKEN"
 }
 
 variable "project_id" {
   description = "Equinix Metal Project ID."
   type        = string
-  default     = "7ab7c2b6-86b1-4fbb-b9cc-cfe11a2f7cf8"
+  default     = "$METAL_PROJECT_ID"
 }
