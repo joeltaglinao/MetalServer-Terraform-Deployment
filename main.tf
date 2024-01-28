@@ -21,7 +21,7 @@ locals {
 # Create a device 
 resource "equinix_metal_device" "joel-test" {
   count            = 3
-  hostname         = format("joel-dc-hybo-%02g", count.index)
+  hostname         = format("joel-server-%02g", count.index)
   plan             = var.plan
   metro            = var.metro
   operating_system = var.os
